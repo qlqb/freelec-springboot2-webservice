@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.jojoldu.book.springboot.web.IndexControllerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-02-12T07:40:44" hostname="LEEJEONGWOO" time="0.809">
+<testsuite name="com.jojoldu.book.springboot.web.IndexControllerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-02-16T19:10:08" hostname="LEEJEONGWOO" time="0.223">
   <properties/>
-  <testcase name="메인페이지_로딩()" classname="com.jojoldu.book.springboot.web.IndexControllerTest" time="0.809"/>
-  <system-out><![CDATA[16:40:38.933 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.jojoldu.book.springboot.web.IndexControllerTest]: IndexControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-16:40:39.092 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.jojoldu.book.springboot.Application for test class com.jojoldu.book.springboot.web.IndexControllerTest
+  <testcase name="메인페이지_로딩()" classname="com.jojoldu.book.springboot.web.IndexControllerTest" time="0.223"/>
+  <system-out><![CDATA[2024-02-17T04:10:07.644+09:00  INFO 6284 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.jojoldu.book.springboot.web.IndexControllerTest]: IndexControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-02-17T04:10:07.654+09:00  INFO 6284 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.jojoldu.book.springboot.Application for test class com.jojoldu.book.springboot.web.IndexControllerTest
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -13,36 +13,39 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v3.2.2)
 
-2024-02-12T16:40:39.574+09:00  INFO 1880 --- [    Test worker] c.j.b.s.web.IndexControllerTest          : Starting IndexControllerTest using Java 17.0.8 with PID 1880 (started by lee12 in C:\jojoldu\Documents\git\book\projects\freelec-springboot2-webservice)
-2024-02-12T16:40:39.575+09:00  INFO 1880 --- [    Test worker] c.j.b.s.web.IndexControllerTest          : No active profile set, falling back to 1 default profile: "default"
-2024-02-12T16:40:40.190+09:00  INFO 1880 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-02-12T16:40:40.257+09:00  INFO 1880 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 57 ms. Found 1 JPA repository interface.
-2024-02-12T16:40:40.897+09:00  INFO 1880 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
-2024-02-12T16:40:40.915+09:00  INFO 1880 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-02-12T16:40:40.915+09:00  INFO 1880 --- [    Test worker] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
-2024-02-12T16:40:40.993+09:00  INFO 1880 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-02-12T16:40:40.994+09:00  INFO 1880 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1394 ms
-2024-02-12T16:40:41.039+09:00  INFO 1880 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-02-12T16:40:41.309+09:00  INFO 1880 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem://localhost/~/testdb user=SA
-2024-02-12T16:40:41.311+09:00  INFO 1880 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-02-12T16:40:41.322+09:00  INFO 1880 --- [    Test worker] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem://localhost/~/testdb'
-2024-02-12T16:40:41.597+09:00  INFO 1880 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-02-12T16:40:41.732+09:00  INFO 1880 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.1.Final
-2024-02-12T16:40:41.776+09:00  INFO 1880 --- [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-02-12T16:40:42.052+09:00  INFO 1880 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-02-12T16:40:42.095+09:00  WARN 1880 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-02-12T16:40:42.096+09:00  WARN 1880 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-2024-02-12T16:40:43.097+09:00  INFO 1880 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-02-17T04:10:07.697+09:00  INFO 6284 --- [    Test worker] c.j.b.s.web.IndexControllerTest          : Starting IndexControllerTest using Java 17.0.8 with PID 6284 (started by lee12 in C:\jojoldu\Documents\git\book\projects\freelec-springboot2-webservice)
+2024-02-17T04:10:07.698+09:00  INFO 6284 --- [    Test worker] c.j.b.s.web.IndexControllerTest          : The following 1 profile is active: "oauth"
+2024-02-17T04:10:07.875+09:00  INFO 6284 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-02-17T04:10:07.888+09:00  INFO 6284 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 2 JPA repository interfaces.
+2024-02-17T04:10:08.127+09:00  INFO 6284 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
+2024-02-17T04:10:08.141+09:00  INFO 6284 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-17T04:10:08.142+09:00  INFO 6284 --- [    Test worker] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-17T04:10:08.234+09:00  INFO 6284 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-17T04:10:08.234+09:00  INFO 6284 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 534 ms
+2024-02-17T04:10:08.245+09:00  INFO 6284 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2024-02-17T04:10:08.246+09:00  INFO 6284 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection conn10: url=jdbc:h2:mem://localhost/~/testdb user=SA
+2024-02-17T04:10:08.247+09:00  INFO 6284 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2024-02-17T04:10:08.247+09:00  INFO 6284 --- [    Test worker] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem://localhost/~/testdb'
+2024-02-17T04:10:08.329+09:00  INFO 6284 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-02-17T04:10:08.332+09:00  INFO 6284 --- [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-02-17T04:10:08.338+09:00  INFO 6284 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-02-17T04:10:08.339+09:00  WARN 6284 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-02-17T04:10:08.339+09:00  WARN 6284 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-02-17T04:10:08.396+09:00  INFO 6284 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
 Hibernate: drop table if exists posts
+Hibernate: drop table if exists users
 Hibernate: create table posts (created_date datetime(6), id bigint not null auto_increment, modified_date datetime(6), title varchar(500) not null, author varchar(255), content TEXT not null, primary key (id)) engine=InnoDB
-2024-02-12T16:40:43.151+09:00  INFO 1880 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-02-12T16:40:43.614+09:00  WARN 1880 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-02-12T16:40:43.648+09:00  INFO 1880 --- [    Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2024-02-12T16:40:44.193+09:00  INFO 1880 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 56518 (http) with context path ''
-2024-02-12T16:40:44.204+09:00  INFO 1880 --- [    Test worker] c.j.b.s.web.IndexControllerTest          : Started IndexControllerTest in 4.956 seconds (process running for 6.397)
-2024-02-12T16:40:44.916+09:00  INFO 1880 --- [o-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-02-12T16:40:44.916+09:00  INFO 1880 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-02-12T16:40:44.917+09:00  INFO 1880 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+Hibernate: create table users (created_date datetime(6), id bigint not null auto_increment, modified_date datetime(6), email varchar(255) not null, name varchar(255) not null, picture varchar(255), role enum ('GUEST','USER') not null, primary key (id)) engine=InnoDB
+2024-02-17T04:10:08.406+09:00  INFO 6284 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-02-17T04:10:08.484+09:00  WARN 6284 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-02-17T04:10:08.496+09:00  INFO 6284 --- [    Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-02-17T04:10:08.562+09:00  INFO 6284 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4a83c651, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2091b6b9, org.springframework.security.web.context.SecurityContextHolderFilter@16019c16, org.springframework.security.web.header.HeaderWriterFilter@108d88b, org.springframework.web.filter.CorsFilter@67091f3b, org.springframework.security.web.authentication.logout.LogoutFilter@11aeb673, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@4435c9b9, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@704e27f9, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@692cab82, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@66f99dcc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2b59285c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2ea7e25d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@321c6e0c, org.springframework.security.web.access.ExceptionTranslationFilter@6bddd4ce, org.springframework.security.web.access.intercept.AuthorizationFilter@c76c029]
+2024-02-17T04:10:08.678+09:00  INFO 6284 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 55922 (http) with context path ''
+2024-02-17T04:10:08.682+09:00  INFO 6284 --- [    Test worker] c.j.b.s.web.IndexControllerTest          : Started IndexControllerTest in 1.022 seconds (process running for 9.864)
+2024-02-17T04:10:08.822+09:00  INFO 6284 --- [o-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-17T04:10:08.822+09:00  INFO 6284 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-17T04:10:08.823+09:00  INFO 6284 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+Hibernate: select p1_0.id,p1_0.author,p1_0.content,p1_0.created_date,p1_0.modified_date,p1_0.title from posts p1_0 order by p1_0.id desc
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
