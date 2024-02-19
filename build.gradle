@@ -48,4 +48,8 @@ test {
     useJUnitPlatform()
 }
 
+jar {
+    enabled = false
+}
+
 // load gradle change 단축키:  Ctrl + Shift + O
