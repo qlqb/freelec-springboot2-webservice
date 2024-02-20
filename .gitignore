@@ -4,9 +4,3 @@
 .idea
 application-oauth.properties
 
-
-.classpath
-
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
